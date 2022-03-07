@@ -1,0 +1,44 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_ResVNet_BDloss', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+total 80 samples
+8 itertations per epoch
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+iteration 1 : loss : 2.006167, loss_dice: 0.637716
+iteration 1 : loss : 2.006167
+iteration 2 : loss : 1.817090, loss_dice: 0.601629
+iteration 2 : loss : 1.817090
+iteration 3 : loss : 1.761032, loss_dice: 0.854690
+iteration 3 : loss : 1.761032
+iteration 4 : loss : 0.957252, loss_dice: 0.323674
+iteration 4 : loss : 0.957252
+iteration 5 : loss : 1.267052, loss_dice: 0.639770
+iteration 5 : loss : 1.267052
+iteration 6 : loss : 1.501635, loss_dice: 0.536050
+
+  0%|                               | 1/751 [00:11<2:28:19, 11.87s/it]
+iteration 7 : loss : 1.603363, loss_dice: 0.588812
+iteration 7 : loss : 1.603363
+iteration 8 : loss : 1.346176, loss_dice: 0.778137
+iteration 8 : loss : 1.346176
+iteration 9 : loss : 1.342964, loss_dice: 0.794527
+iteration 9 : loss : 1.342964
+iteration 10 : loss : 2.089619, loss_dice: 0.943486
+iteration 10 : loss : 2.089619
+iteration 11 : loss : 1.659743, loss_dice: 0.855641
+iteration 11 : loss : 1.659743
+iteration 12 : loss : 1.804972, loss_dice: 0.949540
+iteration 12 : loss : 1.804972
+iteration 13 : loss : 2.285967, loss_dice: 0.956472
+  0%|                               | 1/751 [00:20<4:17:26, 20.60s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 233, in <module>
+    writer.add_scalar('loss/loss', loss, iter_num)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/writer.py", line 457, in add_scalar
+    scalar(tag, scalar_value, display_name, summary_description), global_step, walltime)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/summary.py", line 152, in scalar
+    scalar = make_np(scalar)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/x2num.py", line 28, in make_np
+    return check_nan(prepare_pytorch(x))
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/x2num.py", line 43, in prepare_pytorch
+    x = x.cpu().numpy()
+KeyboardInterrupt

@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/sohui/.pycharm_helpers/pydev/pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/home/sohui/.pycharm_helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_attention_Unet.py", line 144, in <module>
+    model = create_model()
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_attention_Unet.py", line 136, in create_model
+    model = Vattention_Unet(n_classes=num_classes-1,in_channels=1).cuda()
+  File "/home/sohui/code/DTC/code/networks/vnet_attention_Unet3D_sdf.py", line 98, in __init__
+    self.conv1 = UnetConv3(1,self.in_channels, filters[0], self.is_batchnorm, kernel_size=(3,3,3), padding_size=(1,1,1))
+  File "/home/sohui/code/DTC/code/networks/vnet_attention_Unet3D_sdf.py", line 21, in __init__
+    self.conv = nn.Sequential(*ops)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/torch/nn/modules/container.py", line 67, in __init__
+    self.add_module(str(idx), module)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/torch/nn/modules/module.py", line 344, in add_module
+    raise TypeError("{} is not a Module subclass".format(
+TypeError: tuple is not a Module subclass
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VattentionUNet3D_consis0.5', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')

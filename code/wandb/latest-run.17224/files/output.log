@@ -1,0 +1,153 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet_concat_CTGloss', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+8 itertations per epoch
+iteration 1 : loss : 1.370751, loss_dice: 0.596265
+iteration 1 : loss : 1.370751
+iteration 2 : loss : 1.326177, loss_dice: 0.573882
+iteration 2 : loss : 1.326177
+iteration 3 : loss : 1.375358, loss_dice: 0.605861
+iteration 3 : loss : 1.375358
+iteration 4 : loss : 1.329540, loss_dice: 0.460534
+iteration 4 : loss : 1.329540
+iteration 5 : loss : 1.207889, loss_dice: 0.510414
+iteration 5 : loss : 1.207889
+iteration 6 : loss : 1.197454, loss_dice: 0.465159
+iteration 6 : loss : 1.197454
+iteration 7 : loss : 1.368091, loss_dice: 0.542424
+
+  0%|                               | 1/751 [00:11<2:19:46, 11.18s/it]
+iteration 8 : loss : 1.351041, loss_dice: 0.513069
+iteration 8 : loss : 1.351041
+iteration 9 : loss : 1.315429, loss_dice: 0.578270
+iteration 9 : loss : 1.315429
+iteration 10 : loss : 1.141931, loss_dice: 0.436441
+iteration 10 : loss : 1.141931
+iteration 11 : loss : 1.254165, loss_dice: 0.538578
+iteration 11 : loss : 1.254165
+iteration 12 : loss : 1.156162, loss_dice: 0.440943
+iteration 12 : loss : 1.156162
+iteration 13 : loss : 1.195074, loss_dice: 0.466684
+iteration 13 : loss : 1.195074
+iteration 14 : loss : 1.291848, loss_dice: 0.576605
+
+  0%|                               | 2/751 [00:22<2:18:43, 11.11s/it]
+iteration 15 : loss : 1.259188, loss_dice: 0.559796
+iteration 15 : loss : 1.259188
+iteration 16 : loss : 1.229916, loss_dice: 0.533498
+iteration 16 : loss : 1.229916
+iteration 17 : loss : 1.247147, loss_dice: 0.532909
+iteration 17 : loss : 1.247147
+iteration 18 : loss : 1.346029, loss_dice: 0.628942
+iteration 18 : loss : 1.346029
+iteration 19 : loss : 1.244665, loss_dice: 0.517266
+iteration 19 : loss : 1.244665
+iteration 20 : loss : 1.132225, loss_dice: 0.414437
+iteration 20 : loss : 1.132225
+iteration 21 : loss : 1.236408, loss_dice: 0.505703
+iteration 21 : loss : 1.236408
+iteration 22 : loss : 1.173541, loss_dice: 0.480110
+iteration 22 : loss : 1.173541
+iteration 23 : loss : 1.249473, loss_dice: 0.549068
+
+  0%|                               | 3/751 [00:33<2:17:43, 11.05s/it]
+iteration 24 : loss : 1.005952, loss_dice: 0.331047
+iteration 24 : loss : 1.005952
+iteration 25 : loss : 1.144063, loss_dice: 0.432047
+iteration 25 : loss : 1.144063
+iteration 26 : loss : 1.209082, loss_dice: 0.519901
+iteration 26 : loss : 1.209082
+iteration 27 : loss : 1.084247, loss_dice: 0.390016
+iteration 27 : loss : 1.084247
+iteration 28 : loss : 1.191248, loss_dice: 0.486408
+iteration 28 : loss : 1.191248
+iteration 29 : loss : 1.195562, loss_dice: 0.504256
+iteration 29 : loss : 1.195562
+iteration 30 : loss : 1.196778, loss_dice: 0.495763
+
+  1%|▏                              | 4/751 [00:44<2:17:36, 11.05s/it]
+iteration 31 : loss : 1.235414, loss_dice: 0.532243
+iteration 31 : loss : 1.235414
+iteration 32 : loss : 1.222251, loss_dice: 0.517439
+iteration 32 : loss : 1.222251
+iteration 33 : loss : 0.999454, loss_dice: 0.311374
+iteration 33 : loss : 0.999454
+iteration 34 : loss : 1.135821, loss_dice: 0.435355
+iteration 34 : loss : 1.135821
+iteration 35 : loss : 1.119892, loss_dice: 0.428454
+iteration 35 : loss : 1.119892
+iteration 36 : loss : 1.195172, loss_dice: 0.480158
+iteration 36 : loss : 1.195172
+iteration 37 : loss : 1.185469, loss_dice: 0.455077
+iteration 37 : loss : 1.185469
+iteration 38 : loss : 1.142501, loss_dice: 0.432092
+iteration 38 : loss : 1.142501
+iteration 39 : loss : 1.253333, loss_dice: 0.543705
+
+  1%|▏                              | 5/751 [00:55<2:17:14, 11.04s/it]
+iteration 40 : loss : 1.244489, loss_dice: 0.570366
+iteration 40 : loss : 1.244489
+iteration 41 : loss : 1.201895, loss_dice: 0.504395
+iteration 41 : loss : 1.201895
+iteration 42 : loss : 1.141826, loss_dice: 0.462862
+iteration 42 : loss : 1.141826
+iteration 43 : loss : 1.148674, loss_dice: 0.463157
+iteration 43 : loss : 1.148674
+iteration 44 : loss : 1.216148, loss_dice: 0.506577
+iteration 44 : loss : 1.216148
+iteration 45 : loss : 1.162441, loss_dice: 0.485925
+iteration 45 : loss : 1.162441
+iteration 46 : loss : 1.322533, loss_dice: 0.520432
+
+  1%|▏                              | 6/751 [01:06<2:17:08, 11.05s/it]
+iteration 47 : loss : 1.124028, loss_dice: 0.457849
+iteration 47 : loss : 1.124028
+iteration 48 : loss : 1.050247, loss_dice: 0.320352
+iteration 48 : loss : 1.050247
+iteration 49 : loss : 1.160056, loss_dice: 0.414900
+iteration 49 : loss : 1.160056
+iteration 50 : loss : 1.131128, loss_dice: 0.438578
+iteration 50 : loss : 1.131128
+iteration 51 : loss : 1.153812, loss_dice: 0.436278
+iteration 51 : loss : 1.153812
+iteration 52 : loss : 1.070418, loss_dice: 0.370614
+iteration 52 : loss : 1.070418
+iteration 53 : loss : 1.088700, loss_dice: 0.413302
+iteration 53 : loss : 1.088700
+iteration 54 : loss : 1.135100, loss_dice: 0.442796
+iteration 54 : loss : 1.135100
+iteration 55 : loss : 1.170614, loss_dice: 0.476073
+
+  1%|▎                              | 7/751 [01:17<2:17:15, 11.07s/it]
+iteration 56 : loss : 1.132973, loss_dice: 0.472189
+iteration 56 : loss : 1.132973
+iteration 57 : loss : 1.102966, loss_dice: 0.414803
+iteration 57 : loss : 1.102966
+iteration 58 : loss : 1.161600, loss_dice: 0.475531
+iteration 58 : loss : 1.161600
+iteration 59 : loss : 1.138951, loss_dice: 0.465598
+iteration 59 : loss : 1.138951
+iteration 60 : loss : 1.156688, loss_dice: 0.468505
+iteration 60 : loss : 1.156688
+iteration 61 : loss : 1.104553, loss_dice: 0.426723
+iteration 61 : loss : 1.104553
+iteration 62 : loss : 1.116683, loss_dice: 0.423024
+iteration 62 : loss : 1.116683
+iteration 63 : loss : 1.143235, loss_dice: 0.467057
+
+  1%|▎                              | 8/751 [01:28<2:16:03, 10.99s/it]
+iteration 64 : loss : 1.119947, loss_dice: 0.403421
+  1%|▎                              | 8/751 [01:30<2:19:20, 11.25s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 234, in <module>
+    writer.add_scalar('loss/loss', loss, iter_num)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/writer.py", line 457, in add_scalar
+    scalar(tag, scalar_value, display_name, summary_description), global_step, walltime)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/summary.py", line 152, in scalar
+    scalar = make_np(scalar)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/x2num.py", line 28, in make_np
+    return check_nan(prepare_pytorch(x))
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/x2num.py", line 43, in prepare_pytorch
+    x = x.cpu().numpy()
+KeyboardInterrupt

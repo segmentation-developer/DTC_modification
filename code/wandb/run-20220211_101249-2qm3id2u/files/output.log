@@ -1,0 +1,15 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet_DenseModi4_concat', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+  0%|                                         | 0/751 [03:36<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 199, in <module>
+    outputs_tanh, outputs = model(volume_batch)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/sohui/code/DTC/code/networks/vnet_DenseModi4_concat_sdf.py", line 271, in forward
+    out_tanh, out_seg = self.decoder(features)
+  File "/home/sohui/code/DTC/code/networks/vnet_DenseModi4_concat_sdf.py", line 263, in decoder
+    return out_tanh, out_seg
+KeyboardInterrupt

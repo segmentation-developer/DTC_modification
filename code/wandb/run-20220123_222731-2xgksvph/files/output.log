@@ -1,0 +1,930 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SL_VNet', gamma=0.5, gpu='0', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/home/psh/Downloads/data/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                          | 0/76 [00:00<?, ?it/s]
+total 80 samples
+80 itertations per epoch
+iteration 1 : loss : 0.782263, loss_dice1: 0.782263
+iteration 1 : loss : 0.782263
+iteration 2 : loss : 0.696927, loss_dice1: 0.696927
+iteration 2 : loss : 0.696927
+iteration 3 : loss : 0.736435, loss_dice1: 0.736435
+iteration 3 : loss : 0.736435
+iteration 4 : loss : 0.756939, loss_dice1: 0.756939
+iteration 4 : loss : 0.756939
+iteration 5 : loss : 0.855798, loss_dice1: 0.855798
+iteration 5 : loss : 0.855798
+iteration 6 : loss : 0.705349, loss_dice1: 0.705349
+iteration 6 : loss : 0.705349
+iteration 7 : loss : 0.676195, loss_dice1: 0.676195
+iteration 7 : loss : 0.676195
+iteration 8 : loss : 0.681853, loss_dice1: 0.681853
+iteration 8 : loss : 0.681853
+iteration 9 : loss : 0.702250, loss_dice1: 0.702250
+iteration 9 : loss : 0.702250
+iteration 10 : loss : 0.651281, loss_dice1: 0.651281
+iteration 10 : loss : 0.651281
+iteration 11 : loss : 0.816730, loss_dice1: 0.816730
+iteration 11 : loss : 0.816730
+iteration 12 : loss : 0.792629, loss_dice1: 0.792629
+iteration 12 : loss : 0.792629
+iteration 13 : loss : 0.557070, loss_dice1: 0.557070
+iteration 13 : loss : 0.557070
+iteration 14 : loss : 0.523728, loss_dice1: 0.523728
+iteration 14 : loss : 0.523728
+iteration 15 : loss : 0.701058, loss_dice1: 0.701058
+iteration 15 : loss : 0.701058
+iteration 16 : loss : 0.777735, loss_dice1: 0.777735
+iteration 16 : loss : 0.777735
+iteration 17 : loss : 0.679683, loss_dice1: 0.679683
+iteration 17 : loss : 0.679683
+iteration 18 : loss : 0.771566, loss_dice1: 0.771566
+iteration 18 : loss : 0.771566
+iteration 19 : loss : 0.640236, loss_dice1: 0.640236
+iteration 19 : loss : 0.640236
+iteration 20 : loss : 0.596847, loss_dice1: 0.596847
+iteration 20 : loss : 0.596847
+iteration 21 : loss : 0.721566, loss_dice1: 0.721566
+iteration 21 : loss : 0.721566
+iteration 22 : loss : 0.760261, loss_dice1: 0.760261
+iteration 22 : loss : 0.760261
+iteration 23 : loss : 0.604608, loss_dice1: 0.604608
+iteration 23 : loss : 0.604608
+iteration 24 : loss : 0.711832, loss_dice1: 0.711832
+iteration 24 : loss : 0.711832
+iteration 25 : loss : 0.785166, loss_dice1: 0.785166
+iteration 25 : loss : 0.785166
+iteration 26 : loss : 0.604741, loss_dice1: 0.604741
+iteration 26 : loss : 0.604741
+iteration 27 : loss : 0.837570, loss_dice1: 0.837570
+iteration 27 : loss : 0.837570
+iteration 28 : loss : 0.551400, loss_dice1: 0.551400
+iteration 28 : loss : 0.551400
+iteration 29 : loss : 0.687537, loss_dice1: 0.687537
+iteration 29 : loss : 0.687537
+iteration 30 : loss : 0.773557, loss_dice1: 0.773557
+iteration 30 : loss : 0.773557
+iteration 31 : loss : 0.709106, loss_dice1: 0.709106
+iteration 31 : loss : 0.709106
+iteration 32 : loss : 0.685972, loss_dice1: 0.685972
+iteration 32 : loss : 0.685972
+iteration 33 : loss : 0.819242, loss_dice1: 0.819242
+iteration 33 : loss : 0.819242
+iteration 34 : loss : 0.662600, loss_dice1: 0.662600
+iteration 34 : loss : 0.662600
+iteration 35 : loss : 0.587659, loss_dice1: 0.587659
+iteration 35 : loss : 0.587659
+iteration 36 : loss : 0.656664, loss_dice1: 0.656664
+iteration 36 : loss : 0.656664
+iteration 37 : loss : 0.670504, loss_dice1: 0.670504
+iteration 37 : loss : 0.670504
+iteration 38 : loss : 0.660394, loss_dice1: 0.660394
+iteration 38 : loss : 0.660394
+iteration 39 : loss : 0.740543, loss_dice1: 0.740543
+iteration 39 : loss : 0.740543
+iteration 40 : loss : 0.740560, loss_dice1: 0.740560
+iteration 40 : loss : 0.740560
+iteration 41 : loss : 0.688903, loss_dice1: 0.688903
+iteration 41 : loss : 0.688903
+iteration 42 : loss : 0.819643, loss_dice1: 0.819643
+iteration 42 : loss : 0.819643
+iteration 43 : loss : 0.594597, loss_dice1: 0.594597
+iteration 43 : loss : 0.594597
+iteration 44 : loss : 0.464823, loss_dice1: 0.464823
+iteration 44 : loss : 0.464823
+iteration 45 : loss : 0.569132, loss_dice1: 0.569132
+iteration 45 : loss : 0.569132
+iteration 46 : loss : 0.744208, loss_dice1: 0.744208
+iteration 46 : loss : 0.744208
+iteration 47 : loss : 0.708594, loss_dice1: 0.708594
+iteration 47 : loss : 0.708594
+iteration 48 : loss : 0.372072, loss_dice1: 0.372072
+iteration 48 : loss : 0.372072
+iteration 49 : loss : 0.273197, loss_dice1: 0.273197
+iteration 49 : loss : 0.273197
+iteration 50 : loss : 0.575759, loss_dice1: 0.575759
+iteration 50 : loss : 0.575759
+iteration 51 : loss : 0.780801, loss_dice1: 0.780801
+iteration 51 : loss : 0.780801
+iteration 52 : loss : 0.540955, loss_dice1: 0.540955
+iteration 52 : loss : 0.540955
+iteration 53 : loss : 0.637555, loss_dice1: 0.637555
+iteration 53 : loss : 0.637555
+iteration 54 : loss : 0.552392, loss_dice1: 0.552392
+iteration 54 : loss : 0.552392
+iteration 55 : loss : 0.660311, loss_dice1: 0.660311
+iteration 55 : loss : 0.660311
+iteration 56 : loss : 0.445572, loss_dice1: 0.445572
+iteration 56 : loss : 0.445572
+iteration 57 : loss : 0.518586, loss_dice1: 0.518586
+iteration 57 : loss : 0.518586
+iteration 58 : loss : 0.519958, loss_dice1: 0.519958
+iteration 58 : loss : 0.519958
+iteration 59 : loss : 0.656944, loss_dice1: 0.656944
+iteration 59 : loss : 0.656944
+iteration 60 : loss : 0.524000, loss_dice1: 0.524000
+iteration 60 : loss : 0.524000
+iteration 61 : loss : 0.638139, loss_dice1: 0.638139
+iteration 61 : loss : 0.638139
+iteration 62 : loss : 0.331497, loss_dice1: 0.331497
+iteration 62 : loss : 0.331497
+iteration 63 : loss : 0.617788, loss_dice1: 0.617788
+iteration 63 : loss : 0.617788
+iteration 64 : loss : 0.704715, loss_dice1: 0.704715
+iteration 64 : loss : 0.704715
+iteration 65 : loss : 0.537826, loss_dice1: 0.537826
+iteration 65 : loss : 0.537826
+iteration 66 : loss : 0.628058, loss_dice1: 0.628058
+iteration 66 : loss : 0.628058
+iteration 67 : loss : 0.450981, loss_dice1: 0.450981
+iteration 67 : loss : 0.450981
+iteration 68 : loss : 0.641064, loss_dice1: 0.641064
+
+  1%|▍                                 | 1/76 [00:16<20:19, 16.26s/it]
+iteration 69 : loss : 0.524543, loss_dice1: 0.524543
+iteration 69 : loss : 0.524543
+iteration 70 : loss : 0.525292, loss_dice1: 0.525292
+iteration 70 : loss : 0.525292
+iteration 71 : loss : 0.531648, loss_dice1: 0.531648
+iteration 71 : loss : 0.531648
+iteration 72 : loss : 0.517839, loss_dice1: 0.517839
+iteration 72 : loss : 0.517839
+iteration 73 : loss : 0.765852, loss_dice1: 0.765852
+iteration 73 : loss : 0.765852
+iteration 74 : loss : 0.598085, loss_dice1: 0.598085
+iteration 74 : loss : 0.598085
+iteration 75 : loss : 0.371975, loss_dice1: 0.371975
+iteration 75 : loss : 0.371975
+iteration 76 : loss : 0.590784, loss_dice1: 0.590784
+iteration 76 : loss : 0.590784
+iteration 77 : loss : 0.654073, loss_dice1: 0.654073
+iteration 77 : loss : 0.654073
+iteration 78 : loss : 0.569336, loss_dice1: 0.569336
+iteration 78 : loss : 0.569336
+iteration 79 : loss : 0.628298, loss_dice1: 0.628298
+iteration 79 : loss : 0.628298
+iteration 80 : loss : 0.468172, loss_dice1: 0.468172
+iteration 80 : loss : 0.468172
+iteration 81 : loss : 0.590343, loss_dice1: 0.590343
+iteration 81 : loss : 0.590343
+iteration 82 : loss : 0.424865, loss_dice1: 0.424865
+iteration 82 : loss : 0.424865
+iteration 83 : loss : 0.534752, loss_dice1: 0.534752
+iteration 83 : loss : 0.534752
+iteration 84 : loss : 0.601021, loss_dice1: 0.601021
+iteration 84 : loss : 0.601021
+iteration 85 : loss : 0.707888, loss_dice1: 0.707888
+iteration 85 : loss : 0.707888
+iteration 86 : loss : 0.592019, loss_dice1: 0.592019
+iteration 86 : loss : 0.592019
+iteration 87 : loss : 0.532592, loss_dice1: 0.532592
+iteration 87 : loss : 0.532592
+iteration 88 : loss : 0.520607, loss_dice1: 0.520607
+iteration 88 : loss : 0.520607
+iteration 89 : loss : 0.518503, loss_dice1: 0.518503
+iteration 89 : loss : 0.518503
+iteration 90 : loss : 0.481434, loss_dice1: 0.481434
+iteration 90 : loss : 0.481434
+iteration 91 : loss : 0.621466, loss_dice1: 0.621466
+iteration 91 : loss : 0.621466
+iteration 92 : loss : 0.678891, loss_dice1: 0.678891
+iteration 92 : loss : 0.678891
+iteration 93 : loss : 0.450344, loss_dice1: 0.450344
+iteration 93 : loss : 0.450344
+iteration 94 : loss : 0.343354, loss_dice1: 0.343354
+iteration 94 : loss : 0.343354
+iteration 95 : loss : 0.625379, loss_dice1: 0.625379
+iteration 95 : loss : 0.625379
+iteration 96 : loss : 0.622663, loss_dice1: 0.622663
+iteration 96 : loss : 0.622663
+iteration 97 : loss : 0.480348, loss_dice1: 0.480348
+iteration 97 : loss : 0.480348
+iteration 98 : loss : 0.677055, loss_dice1: 0.677055
+iteration 98 : loss : 0.677055
+iteration 99 : loss : 0.489153, loss_dice1: 0.489153
+iteration 99 : loss : 0.489153
+iteration 100 : loss : 0.520152, loss_dice1: 0.520152
+iteration 100 : loss : 0.520152
+iteration 101 : loss : 0.562032, loss_dice1: 0.562032
+iteration 101 : loss : 0.562032
+iteration 102 : loss : 0.591648, loss_dice1: 0.591648
+iteration 102 : loss : 0.591648
+iteration 103 : loss : 0.542331, loss_dice1: 0.542331
+iteration 103 : loss : 0.542331
+iteration 104 : loss : 0.556150, loss_dice1: 0.556150
+iteration 104 : loss : 0.556150
+iteration 105 : loss : 0.666722, loss_dice1: 0.666722
+iteration 105 : loss : 0.666722
+iteration 106 : loss : 0.440183, loss_dice1: 0.440183
+iteration 106 : loss : 0.440183
+iteration 107 : loss : 0.672068, loss_dice1: 0.672068
+iteration 107 : loss : 0.672068
+iteration 108 : loss : 0.401314, loss_dice1: 0.401314
+iteration 108 : loss : 0.401314
+iteration 109 : loss : 0.567058, loss_dice1: 0.567058
+iteration 109 : loss : 0.567058
+iteration 110 : loss : 0.701345, loss_dice1: 0.701345
+iteration 110 : loss : 0.701345
+iteration 111 : loss : 0.479068, loss_dice1: 0.479068
+iteration 111 : loss : 0.479068
+iteration 112 : loss : 0.517222, loss_dice1: 0.517222
+iteration 112 : loss : 0.517222
+iteration 113 : loss : 0.758680, loss_dice1: 0.758680
+iteration 113 : loss : 0.758680
+iteration 114 : loss : 0.408519, loss_dice1: 0.408519
+iteration 114 : loss : 0.408519
+iteration 115 : loss : 0.380490, loss_dice1: 0.380490
+iteration 115 : loss : 0.380490
+iteration 116 : loss : 0.381404, loss_dice1: 0.381404
+iteration 116 : loss : 0.381404
+iteration 117 : loss : 0.582496, loss_dice1: 0.582496
+iteration 117 : loss : 0.582496
+iteration 118 : loss : 0.557835, loss_dice1: 0.557835
+iteration 118 : loss : 0.557835
+iteration 119 : loss : 0.569006, loss_dice1: 0.569006
+iteration 119 : loss : 0.569006
+iteration 120 : loss : 0.611735, loss_dice1: 0.611735
+iteration 120 : loss : 0.611735
+iteration 121 : loss : 0.571122, loss_dice1: 0.571122
+iteration 121 : loss : 0.571122
+iteration 122 : loss : 0.524071, loss_dice1: 0.524071
+iteration 122 : loss : 0.524071
+iteration 123 : loss : 0.256085, loss_dice1: 0.256085
+iteration 123 : loss : 0.256085
+iteration 124 : loss : 0.358251, loss_dice1: 0.358251
+iteration 124 : loss : 0.358251
+iteration 125 : loss : 0.394467, loss_dice1: 0.394467
+iteration 125 : loss : 0.394467
+iteration 126 : loss : 0.559862, loss_dice1: 0.559862
+iteration 126 : loss : 0.559862
+iteration 127 : loss : 0.655921, loss_dice1: 0.655921
+iteration 127 : loss : 0.655921
+iteration 128 : loss : 0.252299, loss_dice1: 0.252299
+iteration 128 : loss : 0.252299
+iteration 129 : loss : 0.230118, loss_dice1: 0.230118
+iteration 129 : loss : 0.230118
+iteration 130 : loss : 0.452148, loss_dice1: 0.452148
+iteration 130 : loss : 0.452148
+iteration 131 : loss : 0.668587, loss_dice1: 0.668587
+iteration 131 : loss : 0.668587
+iteration 132 : loss : 0.305154, loss_dice1: 0.305154
+iteration 132 : loss : 0.305154
+iteration 133 : loss : 0.392270, loss_dice1: 0.392270
+iteration 133 : loss : 0.392270
+iteration 134 : loss : 0.484104, loss_dice1: 0.484104
+iteration 134 : loss : 0.484104
+iteration 135 : loss : 0.493612, loss_dice1: 0.493612
+iteration 135 : loss : 0.493612
+iteration 136 : loss : 0.317875, loss_dice1: 0.317875
+iteration 136 : loss : 0.317875
+iteration 137 : loss : 0.293317, loss_dice1: 0.293317
+iteration 137 : loss : 0.293317
+iteration 138 : loss : 0.475331, loss_dice1: 0.475331
+iteration 138 : loss : 0.475331
+iteration 139 : loss : 0.347022, loss_dice1: 0.347022
+iteration 139 : loss : 0.347022
+iteration 140 : loss : 0.338817, loss_dice1: 0.338817
+iteration 140 : loss : 0.338817
+iteration 141 : loss : 0.448856, loss_dice1: 0.448856
+iteration 141 : loss : 0.448856
+iteration 142 : loss : 0.221820, loss_dice1: 0.221820
+iteration 142 : loss : 0.221820
+iteration 143 : loss : 0.423414, loss_dice1: 0.423414
+iteration 143 : loss : 0.423414
+iteration 144 : loss : 0.460364, loss_dice1: 0.460364
+iteration 144 : loss : 0.460364
+iteration 145 : loss : 0.537366, loss_dice1: 0.537366
+iteration 145 : loss : 0.537366
+iteration 146 : loss : 0.450226, loss_dice1: 0.450226
+iteration 146 : loss : 0.450226
+iteration 147 : loss : 0.238672, loss_dice1: 0.238672
+iteration 147 : loss : 0.238672
+iteration 148 : loss : 0.491870, loss_dice1: 0.491870
+iteration 148 : loss : 0.491870
+iteration 149 : loss : 0.248326, loss_dice1: 0.248326
+iteration 149 : loss : 0.248326
+iteration 150 : loss : 0.294390, loss_dice1: 0.294390
+iteration 150 : loss : 0.294390
+iteration 151 : loss : 0.347221, loss_dice1: 0.347221
+iteration 151 : loss : 0.347221
+iteration 152 : loss : 0.337379, loss_dice1: 0.337379
+iteration 152 : loss : 0.337379
+iteration 153 : loss : 0.693239, loss_dice1: 0.693239
+iteration 153 : loss : 0.693239
+iteration 154 : loss : 0.292279, loss_dice1: 0.292279
+iteration 154 : loss : 0.292279
+iteration 155 : loss : 0.226189, loss_dice1: 0.226189
+iteration 155 : loss : 0.226189
+iteration 156 : loss : 0.412304, loss_dice1: 0.412304
+iteration 156 : loss : 0.412304
+iteration 157 : loss : 0.420102, loss_dice1: 0.420102
+
+  3%|▉                                 | 2/76 [00:34<21:37, 17.54s/it]
+iteration 158 : loss : 0.399520, loss_dice1: 0.399520
+iteration 158 : loss : 0.399520
+iteration 159 : loss : 0.492776, loss_dice1: 0.492776
+iteration 159 : loss : 0.492776
+iteration 160 : loss : 0.386357, loss_dice1: 0.386357
+iteration 160 : loss : 0.386357
+iteration 161 : loss : 0.416003, loss_dice1: 0.416003
+iteration 161 : loss : 0.416003
+iteration 162 : loss : 0.229557, loss_dice1: 0.229557
+iteration 162 : loss : 0.229557
+iteration 163 : loss : 0.693961, loss_dice1: 0.693961
+iteration 163 : loss : 0.693961
+iteration 164 : loss : 0.393122, loss_dice1: 0.393122
+iteration 164 : loss : 0.393122
+iteration 165 : loss : 0.629423, loss_dice1: 0.629423
+iteration 165 : loss : 0.629423
+iteration 166 : loss : 0.316884, loss_dice1: 0.316884
+iteration 166 : loss : 0.316884
+iteration 167 : loss : 0.332612, loss_dice1: 0.332612
+iteration 167 : loss : 0.332612
+iteration 168 : loss : 0.243566, loss_dice1: 0.243566
+iteration 168 : loss : 0.243566
+iteration 169 : loss : 0.231073, loss_dice1: 0.231073
+iteration 169 : loss : 0.231073
+iteration 170 : loss : 0.269479, loss_dice1: 0.269479
+iteration 170 : loss : 0.269479
+iteration 171 : loss : 0.533346, loss_dice1: 0.533346
+iteration 171 : loss : 0.533346
+iteration 172 : loss : 0.704707, loss_dice1: 0.704707
+iteration 172 : loss : 0.704707
+iteration 173 : loss : 0.375818, loss_dice1: 0.375818
+iteration 173 : loss : 0.375818
+iteration 174 : loss : 0.286421, loss_dice1: 0.286421
+iteration 174 : loss : 0.286421
+iteration 175 : loss : 0.336094, loss_dice1: 0.336094
+iteration 175 : loss : 0.336094
+iteration 176 : loss : 0.431309, loss_dice1: 0.431309
+iteration 176 : loss : 0.431309
+iteration 177 : loss : 0.362448, loss_dice1: 0.362448
+iteration 177 : loss : 0.362448
+iteration 178 : loss : 0.513823, loss_dice1: 0.513823
+iteration 178 : loss : 0.513823
+iteration 179 : loss : 0.260229, loss_dice1: 0.260229
+iteration 179 : loss : 0.260229
+iteration 180 : loss : 0.225621, loss_dice1: 0.225621
+iteration 180 : loss : 0.225621
+iteration 181 : loss : 0.234031, loss_dice1: 0.234031
+iteration 181 : loss : 0.234031
+iteration 182 : loss : 0.314656, loss_dice1: 0.314656
+iteration 182 : loss : 0.314656
+iteration 183 : loss : 0.617746, loss_dice1: 0.617746
+iteration 183 : loss : 0.617746
+iteration 184 : loss : 0.526542, loss_dice1: 0.526542
+iteration 184 : loss : 0.526542
+iteration 185 : loss : 0.495330, loss_dice1: 0.495330
+iteration 185 : loss : 0.495330
+iteration 186 : loss : 0.384901, loss_dice1: 0.384901
+iteration 186 : loss : 0.384901
+iteration 187 : loss : 0.538210, loss_dice1: 0.538210
+iteration 187 : loss : 0.538210
+iteration 188 : loss : 0.311265, loss_dice1: 0.311265
+iteration 188 : loss : 0.311265
+iteration 189 : loss : 0.392629, loss_dice1: 0.392629
+iteration 189 : loss : 0.392629
+iteration 190 : loss : 0.547310, loss_dice1: 0.547310
+iteration 190 : loss : 0.547310
+iteration 191 : loss : 0.284033, loss_dice1: 0.284033
+iteration 191 : loss : 0.284033
+iteration 192 : loss : 0.449174, loss_dice1: 0.449174
+iteration 192 : loss : 0.449174
+iteration 193 : loss : 0.712354, loss_dice1: 0.712354
+iteration 193 : loss : 0.712354
+iteration 194 : loss : 0.309411, loss_dice1: 0.309411
+iteration 194 : loss : 0.309411
+iteration 195 : loss : 0.345275, loss_dice1: 0.345275
+iteration 195 : loss : 0.345275
+iteration 196 : loss : 0.415983, loss_dice1: 0.415983
+iteration 196 : loss : 0.415983
+iteration 197 : loss : 0.609429, loss_dice1: 0.609429
+iteration 197 : loss : 0.609429
+iteration 198 : loss : 0.320489, loss_dice1: 0.320489
+iteration 198 : loss : 0.320489
+iteration 199 : loss : 0.555356, loss_dice1: 0.555356
+iteration 199 : loss : 0.555356
+iteration 200 : loss : 0.486175, loss_dice1: 0.486175
+iteration 200 : loss : 0.486175
+iteration 201 : loss : 0.425454, loss_dice1: 0.425454
+iteration 201 : loss : 0.425454
+iteration 202 : loss : 0.599883, loss_dice1: 0.599883
+iteration 202 : loss : 0.599883
+iteration 203 : loss : 0.268392, loss_dice1: 0.268392
+iteration 203 : loss : 0.268392
+iteration 204 : loss : 0.209454, loss_dice1: 0.209454
+iteration 204 : loss : 0.209454
+iteration 205 : loss : 0.262372, loss_dice1: 0.262372
+iteration 205 : loss : 0.262372
+iteration 206 : loss : 0.628935, loss_dice1: 0.628935
+iteration 206 : loss : 0.628935
+iteration 207 : loss : 0.422727, loss_dice1: 0.422727
+iteration 207 : loss : 0.422727
+iteration 208 : loss : 0.210357, loss_dice1: 0.210357
+iteration 208 : loss : 0.210357
+iteration 209 : loss : 0.383454, loss_dice1: 0.383454
+iteration 209 : loss : 0.383454
+iteration 210 : loss : 0.422201, loss_dice1: 0.422201
+iteration 210 : loss : 0.422201
+iteration 211 : loss : 0.685619, loss_dice1: 0.685619
+iteration 211 : loss : 0.685619
+iteration 212 : loss : 0.264486, loss_dice1: 0.264486
+iteration 212 : loss : 0.264486
+iteration 213 : loss : 0.300203, loss_dice1: 0.300203
+iteration 213 : loss : 0.300203
+iteration 214 : loss : 0.259641, loss_dice1: 0.259641
+iteration 214 : loss : 0.259641
+iteration 215 : loss : 0.356929, loss_dice1: 0.356929
+iteration 215 : loss : 0.356929
+iteration 216 : loss : 0.327150, loss_dice1: 0.327150
+iteration 216 : loss : 0.327150
+iteration 217 : loss : 0.196754, loss_dice1: 0.196754
+iteration 217 : loss : 0.196754
+iteration 218 : loss : 0.446451, loss_dice1: 0.446451
+iteration 218 : loss : 0.446451
+iteration 219 : loss : 0.201577, loss_dice1: 0.201577
+iteration 219 : loss : 0.201577
+iteration 220 : loss : 0.203131, loss_dice1: 0.203131
+iteration 220 : loss : 0.203131
+iteration 221 : loss : 0.287956, loss_dice1: 0.287956
+iteration 221 : loss : 0.287956
+iteration 222 : loss : 0.198090, loss_dice1: 0.198090
+iteration 222 : loss : 0.198090
+iteration 223 : loss : 0.287809, loss_dice1: 0.287809
+iteration 223 : loss : 0.287809
+iteration 224 : loss : 0.411522, loss_dice1: 0.411522
+iteration 224 : loss : 0.411522
+iteration 225 : loss : 0.297424, loss_dice1: 0.297424
+iteration 225 : loss : 0.297424
+iteration 226 : loss : 0.220522, loss_dice1: 0.220522
+iteration 226 : loss : 0.220522
+iteration 227 : loss : 0.152136, loss_dice1: 0.152136
+iteration 227 : loss : 0.152136
+iteration 228 : loss : 0.505229, loss_dice1: 0.505229
+iteration 228 : loss : 0.505229
+iteration 229 : loss : 0.178858, loss_dice1: 0.178858
+iteration 229 : loss : 0.178858
+iteration 230 : loss : 0.398054, loss_dice1: 0.398054
+iteration 230 : loss : 0.398054
+iteration 231 : loss : 0.382786, loss_dice1: 0.382786
+iteration 231 : loss : 0.382786
+iteration 232 : loss : 0.215081, loss_dice1: 0.215081
+iteration 232 : loss : 0.215081
+iteration 233 : loss : 0.530748, loss_dice1: 0.530748
+iteration 233 : loss : 0.530748
+iteration 234 : loss : 0.303971, loss_dice1: 0.303971
+
+  4%|█▎                                | 3/76 [00:57<24:31, 20.15s/it]
+iteration 235 : loss : 0.226008, loss_dice1: 0.226008
+iteration 235 : loss : 0.226008
+iteration 236 : loss : 0.382193, loss_dice1: 0.382193
+iteration 236 : loss : 0.382193
+iteration 237 : loss : 0.237788, loss_dice1: 0.237788
+iteration 237 : loss : 0.237788
+iteration 238 : loss : 0.382121, loss_dice1: 0.382121
+iteration 238 : loss : 0.382121
+iteration 239 : loss : 0.359213, loss_dice1: 0.359213
+iteration 239 : loss : 0.359213
+iteration 240 : loss : 0.349935, loss_dice1: 0.349935
+iteration 240 : loss : 0.349935
+iteration 241 : loss : 0.251725, loss_dice1: 0.251725
+iteration 241 : loss : 0.251725
+iteration 242 : loss : 0.150263, loss_dice1: 0.150263
+iteration 242 : loss : 0.150263
+iteration 243 : loss : 0.216800, loss_dice1: 0.216800
+iteration 243 : loss : 0.216800
+iteration 244 : loss : 0.219204, loss_dice1: 0.219204
+iteration 244 : loss : 0.219204
+iteration 245 : loss : 0.559357, loss_dice1: 0.559357
+iteration 245 : loss : 0.559357
+iteration 246 : loss : 0.241053, loss_dice1: 0.241053
+iteration 246 : loss : 0.241053
+iteration 247 : loss : 0.204442, loss_dice1: 0.204442
+iteration 247 : loss : 0.204442
+iteration 248 : loss : 0.208882, loss_dice1: 0.208882
+iteration 248 : loss : 0.208882
+iteration 249 : loss : 0.236212, loss_dice1: 0.236212
+iteration 249 : loss : 0.236212
+iteration 250 : loss : 0.188996, loss_dice1: 0.188996
+iteration 250 : loss : 0.188996
+iteration 251 : loss : 0.395470, loss_dice1: 0.395470
+iteration 251 : loss : 0.395470
+iteration 252 : loss : 0.394381, loss_dice1: 0.394381
+iteration 252 : loss : 0.394381
+iteration 253 : loss : 0.348951, loss_dice1: 0.348951
+iteration 253 : loss : 0.348951
+iteration 254 : loss : 0.252493, loss_dice1: 0.252493
+iteration 254 : loss : 0.252493
+iteration 255 : loss : 0.175102, loss_dice1: 0.175102
+iteration 255 : loss : 0.175102
+iteration 256 : loss : 0.285982, loss_dice1: 0.285982
+iteration 256 : loss : 0.285982
+iteration 257 : loss : 0.272774, loss_dice1: 0.272774
+iteration 257 : loss : 0.272774
+iteration 258 : loss : 0.437336, loss_dice1: 0.437336
+iteration 258 : loss : 0.437336
+iteration 259 : loss : 0.179043, loss_dice1: 0.179043
+iteration 259 : loss : 0.179043
+iteration 260 : loss : 0.220294, loss_dice1: 0.220294
+iteration 260 : loss : 0.220294
+iteration 261 : loss : 0.291625, loss_dice1: 0.291625
+iteration 261 : loss : 0.291625
+iteration 262 : loss : 0.252697, loss_dice1: 0.252697
+iteration 262 : loss : 0.252697
+iteration 263 : loss : 0.130629, loss_dice1: 0.130629
+iteration 263 : loss : 0.130629
+iteration 264 : loss : 0.398654, loss_dice1: 0.398654
+iteration 264 : loss : 0.398654
+iteration 265 : loss : 0.333767, loss_dice1: 0.333767
+iteration 265 : loss : 0.333767
+iteration 266 : loss : 0.267693, loss_dice1: 0.267693
+iteration 266 : loss : 0.267693
+iteration 267 : loss : 0.385760, loss_dice1: 0.385760
+iteration 267 : loss : 0.385760
+iteration 268 : loss : 0.391028, loss_dice1: 0.391028
+iteration 268 : loss : 0.391028
+iteration 269 : loss : 0.273550, loss_dice1: 0.273550
+iteration 269 : loss : 0.273550
+iteration 270 : loss : 0.293873, loss_dice1: 0.293873
+iteration 270 : loss : 0.293873
+iteration 271 : loss : 0.183242, loss_dice1: 0.183242
+iteration 271 : loss : 0.183242
+iteration 272 : loss : 0.183304, loss_dice1: 0.183304
+iteration 272 : loss : 0.183304
+iteration 273 : loss : 0.399521, loss_dice1: 0.399521
+iteration 273 : loss : 0.399521
+iteration 274 : loss : 0.232275, loss_dice1: 0.232275
+iteration 274 : loss : 0.232275
+iteration 275 : loss : 0.137075, loss_dice1: 0.137075
+iteration 275 : loss : 0.137075
+iteration 276 : loss : 0.224933, loss_dice1: 0.224933
+iteration 276 : loss : 0.224933
+iteration 277 : loss : 0.232680, loss_dice1: 0.232680
+iteration 277 : loss : 0.232680
+iteration 278 : loss : 0.179456, loss_dice1: 0.179456
+iteration 278 : loss : 0.179456
+iteration 279 : loss : 0.359898, loss_dice1: 0.359898
+iteration 279 : loss : 0.359898
+iteration 280 : loss : 0.166283, loss_dice1: 0.166283
+iteration 280 : loss : 0.166283
+iteration 281 : loss : 0.437299, loss_dice1: 0.437299
+iteration 281 : loss : 0.437299
+iteration 282 : loss : 0.257273, loss_dice1: 0.257273
+iteration 282 : loss : 0.257273
+iteration 283 : loss : 0.269546, loss_dice1: 0.269546
+iteration 283 : loss : 0.269546
+iteration 284 : loss : 0.260920, loss_dice1: 0.260920
+iteration 284 : loss : 0.260920
+iteration 285 : loss : 0.123209, loss_dice1: 0.123209
+iteration 285 : loss : 0.123209
+iteration 286 : loss : 0.516567, loss_dice1: 0.516567
+iteration 286 : loss : 0.516567
+iteration 287 : loss : 0.182139, loss_dice1: 0.182139
+iteration 287 : loss : 0.182139
+iteration 288 : loss : 0.188465, loss_dice1: 0.188465
+iteration 288 : loss : 0.188465
+iteration 289 : loss : 0.247537, loss_dice1: 0.247537
+iteration 289 : loss : 0.247537
+iteration 290 : loss : 0.167172, loss_dice1: 0.167172
+iteration 290 : loss : 0.167172
+iteration 291 : loss : 0.591597, loss_dice1: 0.591597
+iteration 291 : loss : 0.591597
+iteration 292 : loss : 0.124916, loss_dice1: 0.124916
+iteration 292 : loss : 0.124916
+iteration 293 : loss : 0.221520, loss_dice1: 0.221520
+iteration 293 : loss : 0.221520
+iteration 294 : loss : 0.274559, loss_dice1: 0.274559
+iteration 294 : loss : 0.274559
+iteration 295 : loss : 0.196332, loss_dice1: 0.196332
+iteration 295 : loss : 0.196332
+iteration 296 : loss : 0.199330, loss_dice1: 0.199330
+iteration 296 : loss : 0.199330
+iteration 297 : loss : 0.158783, loss_dice1: 0.158783
+iteration 297 : loss : 0.158783
+iteration 298 : loss : 0.261281, loss_dice1: 0.261281
+iteration 298 : loss : 0.261281
+iteration 299 : loss : 0.151308, loss_dice1: 0.151308
+iteration 299 : loss : 0.151308
+iteration 300 : loss : 0.100497, loss_dice1: 0.100497
+iteration 300 : loss : 0.100497
+iteration 301 : loss : 0.198553, loss_dice1: 0.198553
+iteration 301 : loss : 0.198553
+iteration 302 : loss : 0.208965, loss_dice1: 0.208965
+iteration 302 : loss : 0.208965
+iteration 303 : loss : 0.161163, loss_dice1: 0.161163
+iteration 303 : loss : 0.161163
+iteration 304 : loss : 0.299419, loss_dice1: 0.299419
+iteration 304 : loss : 0.299419
+iteration 305 : loss : 0.192848, loss_dice1: 0.192848
+iteration 305 : loss : 0.192848
+iteration 306 : loss : 0.148632, loss_dice1: 0.148632
+iteration 306 : loss : 0.148632
+iteration 307 : loss : 0.149502, loss_dice1: 0.149502
+iteration 307 : loss : 0.149502
+iteration 308 : loss : 0.241659, loss_dice1: 0.241659
+iteration 308 : loss : 0.241659
+iteration 309 : loss : 0.185708, loss_dice1: 0.185708
+iteration 309 : loss : 0.185708
+iteration 310 : loss : 0.242619, loss_dice1: 0.242619
+iteration 310 : loss : 0.242619
+iteration 311 : loss : 0.164562, loss_dice1: 0.164562
+iteration 311 : loss : 0.164562
+iteration 312 : loss : 0.174213, loss_dice1: 0.174213
+iteration 312 : loss : 0.174213
+iteration 313 : loss : 0.444462, loss_dice1: 0.444462
+iteration 313 : loss : 0.444462
+iteration 314 : loss : 0.125301, loss_dice1: 0.125301
+iteration 314 : loss : 0.125301
+iteration 315 : loss : 0.147972, loss_dice1: 0.147972
+iteration 315 : loss : 0.147972
+iteration 316 : loss : 0.172207, loss_dice1: 0.172207
+iteration 316 : loss : 0.172207
+iteration 317 : loss : 0.284822, loss_dice1: 0.284822
+iteration 317 : loss : 0.284822
+iteration 318 : loss : 0.299734, loss_dice1: 0.299734
+iteration 318 : loss : 0.299734
+iteration 319 : loss : 0.283058, loss_dice1: 0.283058
+iteration 319 : loss : 0.283058
+iteration 320 : loss : 0.250560, loss_dice1: 0.250560
+
+  5%|█▊                                | 4/76 [01:20<25:17, 21.08s/it]
+iteration 321 : loss : 0.260324, loss_dice1: 0.260324
+iteration 321 : loss : 0.260324
+iteration 322 : loss : 0.141649, loss_dice1: 0.141649
+iteration 322 : loss : 0.141649
+iteration 323 : loss : 0.160981, loss_dice1: 0.160981
+iteration 323 : loss : 0.160981
+iteration 324 : loss : 0.226217, loss_dice1: 0.226217
+iteration 324 : loss : 0.226217
+iteration 325 : loss : 0.259277, loss_dice1: 0.259277
+iteration 325 : loss : 0.259277
+iteration 326 : loss : 0.162777, loss_dice1: 0.162777
+iteration 326 : loss : 0.162777
+iteration 327 : loss : 0.167629, loss_dice1: 0.167629
+iteration 327 : loss : 0.167629
+iteration 328 : loss : 0.126602, loss_dice1: 0.126602
+iteration 328 : loss : 0.126602
+iteration 329 : loss : 0.137909, loss_dice1: 0.137909
+iteration 329 : loss : 0.137909
+iteration 330 : loss : 0.076827, loss_dice1: 0.076827
+iteration 330 : loss : 0.076827
+iteration 331 : loss : 0.239236, loss_dice1: 0.239236
+iteration 331 : loss : 0.239236
+iteration 332 : loss : 0.309627, loss_dice1: 0.309627
+iteration 332 : loss : 0.309627
+iteration 333 : loss : 0.248049, loss_dice1: 0.248049
+iteration 333 : loss : 0.248049
+iteration 334 : loss : 0.224684, loss_dice1: 0.224684
+iteration 334 : loss : 0.224684
+iteration 335 : loss : 0.126459, loss_dice1: 0.126459
+iteration 335 : loss : 0.126459
+iteration 336 : loss : 0.391878, loss_dice1: 0.391878
+iteration 336 : loss : 0.391878
+iteration 337 : loss : 0.218863, loss_dice1: 0.218863
+iteration 337 : loss : 0.218863
+iteration 338 : loss : 0.308712, loss_dice1: 0.308712
+iteration 338 : loss : 0.308712
+iteration 339 : loss : 0.168692, loss_dice1: 0.168692
+iteration 339 : loss : 0.168692
+iteration 340 : loss : 0.199860, loss_dice1: 0.199860
+iteration 340 : loss : 0.199860
+iteration 341 : loss : 0.144690, loss_dice1: 0.144690
+iteration 341 : loss : 0.144690
+iteration 342 : loss : 0.222113, loss_dice1: 0.222113
+iteration 342 : loss : 0.222113
+iteration 343 : loss : 0.102034, loss_dice1: 0.102034
+iteration 343 : loss : 0.102034
+iteration 344 : loss : 0.294421, loss_dice1: 0.294421
+iteration 344 : loss : 0.294421
+iteration 345 : loss : 0.260262, loss_dice1: 0.260262
+iteration 345 : loss : 0.260262
+iteration 346 : loss : 0.215014, loss_dice1: 0.215014
+iteration 346 : loss : 0.215014
+iteration 347 : loss : 0.206515, loss_dice1: 0.206515
+iteration 347 : loss : 0.206515
+iteration 348 : loss : 0.277807, loss_dice1: 0.277807
+iteration 348 : loss : 0.277807
+iteration 349 : loss : 0.133870, loss_dice1: 0.133870
+iteration 349 : loss : 0.133870
+iteration 350 : loss : 0.336001, loss_dice1: 0.336001
+iteration 350 : loss : 0.336001
+iteration 351 : loss : 0.171120, loss_dice1: 0.171120
+iteration 351 : loss : 0.171120
+iteration 352 : loss : 0.157666, loss_dice1: 0.157666
+iteration 352 : loss : 0.157666
+iteration 353 : loss : 0.288742, loss_dice1: 0.288742
+iteration 353 : loss : 0.288742
+iteration 354 : loss : 0.175192, loss_dice1: 0.175192
+iteration 354 : loss : 0.175192
+iteration 355 : loss : 0.106936, loss_dice1: 0.106936
+iteration 355 : loss : 0.106936
+iteration 356 : loss : 0.196904, loss_dice1: 0.196904
+iteration 356 : loss : 0.196904
+iteration 357 : loss : 0.259575, loss_dice1: 0.259575
+iteration 357 : loss : 0.259575
+iteration 358 : loss : 0.135080, loss_dice1: 0.135080
+iteration 358 : loss : 0.135080
+iteration 359 : loss : 0.338593, loss_dice1: 0.338593
+iteration 359 : loss : 0.338593
+iteration 360 : loss : 0.148174, loss_dice1: 0.148174
+iteration 360 : loss : 0.148174
+iteration 361 : loss : 0.182688, loss_dice1: 0.182688
+iteration 361 : loss : 0.182688
+iteration 362 : loss : 0.158651, loss_dice1: 0.158651
+iteration 362 : loss : 0.158651
+iteration 363 : loss : 0.332545, loss_dice1: 0.332545
+iteration 363 : loss : 0.332545
+iteration 364 : loss : 0.221987, loss_dice1: 0.221987
+iteration 364 : loss : 0.221987
+iteration 365 : loss : 0.150150, loss_dice1: 0.150150
+iteration 365 : loss : 0.150150
+iteration 366 : loss : 0.216777, loss_dice1: 0.216777
+iteration 366 : loss : 0.216777
+iteration 367 : loss : 0.140775, loss_dice1: 0.140775
+iteration 367 : loss : 0.140775
+iteration 368 : loss : 0.160418, loss_dice1: 0.160418
+iteration 368 : loss : 0.160418
+iteration 369 : loss : 0.481736, loss_dice1: 0.481736
+iteration 369 : loss : 0.481736
+iteration 370 : loss : 0.162081, loss_dice1: 0.162081
+iteration 370 : loss : 0.162081
+iteration 371 : loss : 0.473686, loss_dice1: 0.473686
+iteration 371 : loss : 0.473686
+iteration 372 : loss : 0.139804, loss_dice1: 0.139804
+iteration 372 : loss : 0.139804
+iteration 373 : loss : 0.168611, loss_dice1: 0.168611
+iteration 373 : loss : 0.168611
+iteration 374 : loss : 0.139649, loss_dice1: 0.139649
+iteration 374 : loss : 0.139649
+iteration 375 : loss : 0.130842, loss_dice1: 0.130842
+iteration 375 : loss : 0.130842
+iteration 376 : loss : 0.140047, loss_dice1: 0.140047
+iteration 376 : loss : 0.140047
+iteration 377 : loss : 0.129852, loss_dice1: 0.129852
+iteration 377 : loss : 0.129852
+iteration 378 : loss : 0.179519, loss_dice1: 0.179519
+iteration 378 : loss : 0.179519
+iteration 379 : loss : 0.146620, loss_dice1: 0.146620
+iteration 379 : loss : 0.146620
+iteration 380 : loss : 0.091185, loss_dice1: 0.091185
+iteration 380 : loss : 0.091185
+iteration 381 : loss : 0.121938, loss_dice1: 0.121938
+iteration 381 : loss : 0.121938
+iteration 382 : loss : 0.202874, loss_dice1: 0.202874
+iteration 382 : loss : 0.202874
+iteration 383 : loss : 0.236102, loss_dice1: 0.236102
+iteration 383 : loss : 0.236102
+iteration 384 : loss : 0.230113, loss_dice1: 0.230113
+iteration 384 : loss : 0.230113
+iteration 385 : loss : 0.160446, loss_dice1: 0.160446
+iteration 385 : loss : 0.160446
+iteration 386 : loss : 0.135959, loss_dice1: 0.135959
+iteration 386 : loss : 0.135959
+iteration 387 : loss : 0.121389, loss_dice1: 0.121389
+iteration 387 : loss : 0.121389
+iteration 388 : loss : 0.124232, loss_dice1: 0.124232
+iteration 388 : loss : 0.124232
+iteration 389 : loss : 0.201860, loss_dice1: 0.201860
+iteration 389 : loss : 0.201860
+iteration 390 : loss : 0.220953, loss_dice1: 0.220953
+iteration 390 : loss : 0.220953
+iteration 391 : loss : 0.118875, loss_dice1: 0.118875
+iteration 391 : loss : 0.118875
+iteration 392 : loss : 0.121588, loss_dice1: 0.121588
+iteration 392 : loss : 0.121588
+iteration 393 : loss : 0.431436, loss_dice1: 0.431436
+iteration 393 : loss : 0.431436
+iteration 394 : loss : 0.136601, loss_dice1: 0.136601
+iteration 394 : loss : 0.136601
+iteration 395 : loss : 0.183557, loss_dice1: 0.183557
+iteration 395 : loss : 0.183557
+iteration 396 : loss : 0.203700, loss_dice1: 0.203700
+iteration 396 : loss : 0.203700
+iteration 397 : loss : 0.132038, loss_dice1: 0.132038
+iteration 397 : loss : 0.132038
+iteration 398 : loss : 0.154828, loss_dice1: 0.154828
+iteration 398 : loss : 0.154828
+iteration 399 : loss : 0.190712, loss_dice1: 0.190712
+
+  7%|██▏                               | 5/76 [01:38<23:50, 20.14s/it]
+iteration 400 : loss : 0.200668, loss_dice1: 0.200668
+iteration 400 : loss : 0.200668
+iteration 401 : loss : 0.100065, loss_dice1: 0.100065
+iteration 401 : loss : 0.100065
+iteration 402 : loss : 0.157725, loss_dice1: 0.157725
+iteration 402 : loss : 0.157725
+iteration 403 : loss : 0.139239, loss_dice1: 0.139239
+iteration 403 : loss : 0.139239
+iteration 404 : loss : 0.101070, loss_dice1: 0.101070
+iteration 404 : loss : 0.101070
+iteration 405 : loss : 0.267903, loss_dice1: 0.267903
+iteration 405 : loss : 0.267903
+iteration 406 : loss : 0.119744, loss_dice1: 0.119744
+iteration 406 : loss : 0.119744
+iteration 407 : loss : 0.136252, loss_dice1: 0.136252
+iteration 407 : loss : 0.136252
+iteration 408 : loss : 0.087868, loss_dice1: 0.087868
+iteration 408 : loss : 0.087868
+iteration 409 : loss : 0.122762, loss_dice1: 0.122762
+iteration 409 : loss : 0.122762
+iteration 410 : loss : 0.085941, loss_dice1: 0.085941
+iteration 410 : loss : 0.085941
+iteration 411 : loss : 0.118457, loss_dice1: 0.118457
+iteration 411 : loss : 0.118457
+iteration 412 : loss : 0.230478, loss_dice1: 0.230478
+iteration 412 : loss : 0.230478
+iteration 413 : loss : 0.214876, loss_dice1: 0.214876
+iteration 413 : loss : 0.214876
+iteration 414 : loss : 0.187963, loss_dice1: 0.187963
+iteration 414 : loss : 0.187963
+iteration 415 : loss : 0.116786, loss_dice1: 0.116786
+iteration 415 : loss : 0.116786
+iteration 416 : loss : 0.231303, loss_dice1: 0.231303
+iteration 416 : loss : 0.231303
+iteration 417 : loss : 0.269406, loss_dice1: 0.269406
+iteration 417 : loss : 0.269406
+iteration 418 : loss : 0.209251, loss_dice1: 0.209251
+iteration 418 : loss : 0.209251
+iteration 419 : loss : 0.141460, loss_dice1: 0.141460
+iteration 419 : loss : 0.141460
+iteration 420 : loss : 0.128520, loss_dice1: 0.128520
+iteration 420 : loss : 0.128520
+iteration 421 : loss : 0.218100, loss_dice1: 0.218100
+iteration 421 : loss : 0.218100
+iteration 422 : loss : 0.228710, loss_dice1: 0.228710
+iteration 422 : loss : 0.228710
+iteration 423 : loss : 0.120745, loss_dice1: 0.120745
+iteration 423 : loss : 0.120745
+iteration 424 : loss : 0.232896, loss_dice1: 0.232896
+iteration 424 : loss : 0.232896
+iteration 425 : loss : 0.194191, loss_dice1: 0.194191
+iteration 425 : loss : 0.194191
+iteration 426 : loss : 0.220759, loss_dice1: 0.220759
+iteration 426 : loss : 0.220759
+iteration 427 : loss : 0.147222, loss_dice1: 0.147222
+iteration 427 : loss : 0.147222
+iteration 428 : loss : 0.238613, loss_dice1: 0.238613
+iteration 428 : loss : 0.238613
+iteration 429 : loss : 0.140645, loss_dice1: 0.140645
+iteration 429 : loss : 0.140645
+iteration 430 : loss : 0.206019, loss_dice1: 0.206019
+iteration 430 : loss : 0.206019
+iteration 431 : loss : 0.136079, loss_dice1: 0.136079
+iteration 431 : loss : 0.136079
+iteration 432 : loss : 0.140547, loss_dice1: 0.140547
+iteration 432 : loss : 0.140547
+iteration 433 : loss : 0.222426, loss_dice1: 0.222426
+iteration 433 : loss : 0.222426
+iteration 434 : loss : 0.161647, loss_dice1: 0.161647
+iteration 434 : loss : 0.161647
+iteration 435 : loss : 0.099466, loss_dice1: 0.099466
+iteration 435 : loss : 0.099466
+iteration 436 : loss : 0.160593, loss_dice1: 0.160593
+iteration 436 : loss : 0.160593
+iteration 437 : loss : 0.117512, loss_dice1: 0.117512
+iteration 437 : loss : 0.117512
+iteration 438 : loss : 0.091848, loss_dice1: 0.091848
+iteration 438 : loss : 0.091848
+iteration 439 : loss : 0.222894, loss_dice1: 0.222894
+iteration 439 : loss : 0.222894
+iteration 440 : loss : 0.122252, loss_dice1: 0.122252
+iteration 440 : loss : 0.122252
+iteration 441 : loss : 0.128188, loss_dice1: 0.128188
+iteration 441 : loss : 0.128188
+iteration 442 : loss : 0.110388, loss_dice1: 0.110388
+iteration 442 : loss : 0.110388
+iteration 443 : loss : 0.151547, loss_dice1: 0.151547
+iteration 443 : loss : 0.151547
+iteration 444 : loss : 0.205663, loss_dice1: 0.205663
+iteration 444 : loss : 0.205663
+iteration 445 : loss : 0.124292, loss_dice1: 0.124292
+  7%|██▏                               | 5/76 [01:49<25:58, 21.95s/it]
+Traceback (most recent call last):
+  File "/home/psh/PycharmProjects/DTC_57/code/SL_train_la_dtc_VNet.py", line 193, in <module>
+    outputs_tanh, outputs = model(volume_batch)
+  File "/home/psh/anaconda3/envs/lung_unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/psh/PycharmProjects/DTC_57/code/networks/vnet_sdf.py", line 245, in forward
+    features = self.encoder(input)
+  File "/home/psh/PycharmProjects/DTC_57/code/networks/vnet_sdf.py", line 195, in encoder
+    x3 = self.block_three(x2_dw)
+  File "/home/psh/anaconda3/envs/lung_unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/psh/PycharmProjects/DTC_57/code/networks/vnet_sdf.py", line 35, in forward
+    x = self.conv(x)
+  File "/home/psh/anaconda3/envs/lung_unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/psh/anaconda3/envs/lung_unet/lib/python3.7/site-packages/torch/nn/modules/container.py", line 119, in forward
+    input = module(input)
+  File "/home/psh/anaconda3/envs/lung_unet/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/psh/anaconda3/envs/lung_unet/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 521, in forward
+    self.padding, self.dilation, self.groups)
+KeyboardInterrupt
+iteration 446 : loss : 0.158175, loss_dice1: 0.158175
+iteration 446 : loss : 0.158175
+iteration 447 : loss : 0.114810, loss_dice1: 0.114810
+iteration 447 : loss : 0.114810
+iteration 448 : loss : 0.158168, loss_dice1: 0.158168
+iteration 448 : loss : 0.158168
+iteration 449 : loss : 0.326503, loss_dice1: 0.326503
+iteration 449 : loss : 0.326503

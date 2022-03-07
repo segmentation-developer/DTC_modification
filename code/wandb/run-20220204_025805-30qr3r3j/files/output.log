@@ -1,0 +1,55 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet_concat_consis0.2', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+8 itertations per epoch
+iteration 1 : loss : 1.277153, loss_dice: 0.588370
+iteration 1 : loss : 1.277153
+iteration 2 : loss : 1.402935, loss_dice: 0.573662
+iteration 2 : loss : 1.402935
+iteration 3 : loss : 1.341105, loss_dice: 0.624714
+iteration 3 : loss : 1.341105
+iteration 4 : loss : 1.028988, loss_dice: 0.443288
+iteration 4 : loss : 1.028988
+iteration 5 : loss : 1.098221, loss_dice: 0.476879
+iteration 5 : loss : 1.098221
+iteration 6 : loss : 1.233413, loss_dice: 0.475605
+iteration 6 : loss : 1.233413
+iteration 7 : loss : 1.178332, loss_dice: 0.532298
+
+  0%|                               | 1/751 [00:12<2:41:01, 12.88s/it]
+iteration 8 : loss : 1.031330, loss_dice: 0.504145
+iteration 8 : loss : 1.031330
+iteration 9 : loss : 1.112372, loss_dice: 0.535854
+iteration 9 : loss : 1.112372
+iteration 10 : loss : 1.028278, loss_dice: 0.496546
+iteration 10 : loss : 1.028278
+iteration 11 : loss : 0.978527, loss_dice: 0.467204
+iteration 11 : loss : 0.978527
+iteration 12 : loss : 0.872983, loss_dice: 0.427319
+iteration 12 : loss : 0.872983
+iteration 13 : loss : 1.015470, loss_dice: 0.468228
+iteration 13 : loss : 1.015470
+iteration 14 : loss : 1.020104, loss_dice: 0.547084
+iteration 14 : loss : 1.020104
+iteration 15 : loss : 1.036885, loss_dice: 0.521451
+
+  0%|                               | 2/751 [00:25<2:39:25, 12.77s/it]
+iteration 16 : loss : 1.016375, loss_dice: 0.489281
+iteration 16 : loss : 1.016375
+iteration 17 : loss : 0.884967, loss_dice: 0.506436
+iteration 17 : loss : 0.884967
+iteration 18 : loss : 0.946155, loss_dice: 0.542058
+iteration 18 : loss : 0.946155
+iteration 19 : loss : 0.965799, loss_dice: 0.457718
+iteration 19 : loss : 0.965799
+iteration 20 : loss : 0.875459, loss_dice: 0.417427
+  0%|                               | 2/751 [00:32<3:22:37, 16.23s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 203, in <module>
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/DTC/code/utils/util.py", line 141, in compute_sdf
+    posdis = distance(posmask)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/scipy/ndimage/morphology.py", line 2278, in distance_transform_edt
+    _nd_image.euclidean_feature_transform(input, sampling, ft)
+KeyboardInterrupt

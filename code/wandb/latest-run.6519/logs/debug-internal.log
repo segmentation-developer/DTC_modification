@@ -1,0 +1,160 @@
+2022-01-31 13:44:43,939 INFO    MainThread:6630 [internal.py:wandb_internal():87] W&B internal server running at pid: 6630, started at: 2022-01-31 13:44:43.939231
+2022-01-31 13:44:43,949 INFO    WriterThread:6630 [datastore.py:open_for_write():77] open: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/run-10sgd80m.wandb
+2022-01-31 13:44:43,950 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: check_version
+2022-01-31 13:44:43,961 DEBUG   SenderThread:6630 [sender.py:send():238] send: header
+2022-01-31 13:44:43,962 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: check_version
+2022-01-31 13:44:44,045 DEBUG   SenderThread:6630 [sender.py:send():238] send: run
+2022-01-31 13:44:44,349 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: run_start
+2022-01-31 13:44:44,357 INFO    SenderThread:6630 [dir_watcher.py:__init__():169] watching files in: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files
+2022-01-31 13:44:44,358 INFO    SenderThread:6630 [sender.py:_start_run_threads():825] run started: 10sgd80m with start time 1643636682
+2022-01-31 13:44:44,358 DEBUG   SenderThread:6630 [sender.py:send():238] send: summary
+2022-01-31 13:44:44,360 DEBUG   HandlerThread:6630 [meta.py:__init__():40] meta init
+2022-01-31 13:44:44,360 INFO    SenderThread:6630 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2022-01-31 13:44:44,360 DEBUG   HandlerThread:6630 [meta.py:__init__():54] meta init done
+2022-01-31 13:44:44,360 DEBUG   HandlerThread:6630 [meta.py:probe():214] probe
+2022-01-31 13:44:44,376 DEBUG   HandlerThread:6630 [git.py:repo():33] git repository is invalid
+2022-01-31 13:44:44,376 DEBUG   HandlerThread:6630 [meta.py:_save_pip():58] save pip
+2022-01-31 13:44:44,380 DEBUG   HandlerThread:6630 [meta.py:_save_pip():72] save pip done
+2022-01-31 13:44:44,380 DEBUG   HandlerThread:6630 [meta.py:_save_conda():79] save conda
+2022-01-31 13:44:44,387 ERROR   HandlerThread:6630 [meta.py:_save_conda():88] Error saving conda packages
+Traceback (most recent call last):
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/wandb/sdk/internal/meta.py", line 84, in _save_conda
+    subprocess.call(
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2022-01-31 13:44:44,396 DEBUG   HandlerThread:6630 [meta.py:_save_conda():89] save conda done
+2022-01-31 13:44:44,397 DEBUG   HandlerThread:6630 [meta.py:probe():252] probe done
+2022-01-31 13:44:44,854 DEBUG   SenderThread:6630 [sender.py:send():238] send: files
+2022-01-31 13:44:44,855 INFO    SenderThread:6630 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2022-01-31 13:44:44,871 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:44:44,872 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:44:45,370 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/requirements.txt
+2022-01-31 13:44:45,371 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-summary.json
+2022-01-31 13:44:45,371 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/conda-environment.yaml
+2022-01-31 13:44:45,372 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-metadata.json
+2022-01-31 13:44:45,372 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_created():217] file/dir created: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log
+2022-01-31 13:44:45,635 INFO    Thread-16 :6630 [upload_job.py:push():137] Uploaded file /tmp/tmppqrpz30kwandb/125exof8-wandb-metadata.json
+2022-01-31 13:44:47,361 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log
+2022-01-31 13:44:51,366 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log
+2022-01-31 13:44:53,369 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log
+2022-01-31 13:45:00,131 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:45:00,132 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:45:15,389 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:45:15,390 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:45:17,469 DEBUG   SenderThread:6630 [sender.py:send():238] send: stats
+2022-01-31 13:45:30,619 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:45:30,620 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:45:45,846 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:45:45,847 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:45:52,207 DEBUG   SenderThread:6630 [sender.py:send():238] send: stats
+2022-01-31 13:46:01,086 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:46:01,087 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:46:16,329 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:46:16,330 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:46:27,194 DEBUG   SenderThread:6630 [sender.py:send():238] send: stats
+2022-01-31 13:46:31,560 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:46:31,561 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:46:46,794 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-31 13:46:46,795 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: stop_status
+2022-01-31 13:46:47,924 WARNING MainThread:6630 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2022-01-31 13:46:50,264 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:50,265 DEBUG   SenderThread:6630 [sender.py:send():238] send: telemetry
+2022-01-31 13:46:50,266 DEBUG   SenderThread:6630 [sender.py:send():238] send: exit
+2022-01-31 13:46:50,266 INFO    SenderThread:6630 [sender.py:send_exit():370] handling exit code: 0
+2022-01-31 13:46:50,268 INFO    SenderThread:6630 [sender.py:send_exit():372] handling runtime: 125
+2022-01-31 13:46:50,293 INFO    SenderThread:6630 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2022-01-31 13:46:50,294 INFO    SenderThread:6630 [sender.py:send_exit():382] send defer
+2022-01-31 13:46:50,296 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:50,302 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:50,303 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-31 13:46:50,305 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:50,305 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 0
+2022-01-31 13:46:50,306 INFO    SenderThread:6630 [sender.py:transition_state():395] send defer: 1
+2022-01-31 13:46:50,307 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:50,307 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-31 13:46:50,520 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-summary.json
+2022-01-31 13:46:50,521 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log
+2022-01-31 13:46:50,784 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:50,784 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:50,785 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 1
+2022-01-31 13:46:50,786 INFO    SenderThread:6630 [sender.py:transition_state():395] send defer: 2
+2022-01-31 13:46:50,786 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:50,787 DEBUG   SenderThread:6630 [sender.py:send():238] send: stats
+2022-01-31 13:46:50,789 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:50,789 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-31 13:46:50,790 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:50,790 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 2
+2022-01-31 13:46:50,790 INFO    SenderThread:6630 [sender.py:transition_state():395] send defer: 3
+2022-01-31 13:46:50,791 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:50,791 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-31 13:46:50,792 DEBUG   SenderThread:6630 [sender.py:send():238] send: summary
+2022-01-31 13:46:50,794 INFO    SenderThread:6630 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2022-01-31 13:46:50,795 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:50,796 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 3
+2022-01-31 13:46:50,797 INFO    SenderThread:6630 [sender.py:transition_state():395] send defer: 4
+2022-01-31 13:46:50,798 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:50,799 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-31 13:46:50,799 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:50,800 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 4
+2022-01-31 13:46:50,890 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:51,097 INFO    SenderThread:6630 [sender.py:transition_state():395] send defer: 5
+2022-01-31 13:46:51,098 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:51,100 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:51,100 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-31 13:46:51,101 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:51,102 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 5
+2022-01-31 13:46:51,102 INFO    SenderThread:6630 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-31 13:46:51,204 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:51,523 INFO    Thread-13 :6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/config.yaml
+2022-01-31 13:46:51,527 INFO    SenderThread:6630 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-summary.json
+2022-01-31 13:46:51,528 INFO    SenderThread:6630 [dir_watcher.py:finish():313] scan: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files
+2022-01-31 13:46:51,529 INFO    SenderThread:6630 [dir_watcher.py:finish():327] scan save: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log output.log
+2022-01-31 13:46:51,530 INFO    SenderThread:6630 [dir_watcher.py:finish():327] scan save: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-metadata.json wandb-metadata.json
+2022-01-31 13:46:51,531 INFO    SenderThread:6630 [dir_watcher.py:finish():327] scan save: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/config.yaml config.yaml
+2022-01-31 13:46:51,549 INFO    SenderThread:6630 [dir_watcher.py:finish():327] scan save: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/conda-environment.yaml conda-environment.yaml
+2022-01-31 13:46:51,565 INFO    SenderThread:6630 [dir_watcher.py:finish():327] scan save: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/requirements.txt requirements.txt
+2022-01-31 13:46:51,567 INFO    SenderThread:6630 [dir_watcher.py:finish():327] scan save: /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-summary.json wandb-summary.json
+2022-01-31 13:46:51,588 INFO    SenderThread:6630 [sender.py:transition_state():395] send defer: 6
+2022-01-31 13:46:51,593 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:51,609 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:51,609 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-31 13:46:51,662 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:51,663 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 6
+2022-01-31 13:46:51,665 INFO    SenderThread:6630 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-31 13:46:51,705 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:51,706 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:51,810 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:51,810 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:51,928 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:51,955 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,080 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,080 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,183 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,184 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,287 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,287 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,301 INFO    Thread-17 :6630 [upload_job.py:push():137] Uploaded file /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/output.log
+2022-01-31 13:46:52,314 INFO    Thread-18 :6630 [upload_job.py:push():137] Uploaded file /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/config.yaml
+2022-01-31 13:46:52,342 INFO    Thread-19 :6630 [upload_job.py:push():137] Uploaded file /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/requirements.txt
+2022-01-31 13:46:52,391 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,391 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,494 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,495 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,598 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,599 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,708 INFO    Thread-20 :6630 [upload_job.py:push():137] Uploaded file /home/sohui/code/DTC/code/wandb/run-20220131_134441-10sgd80m/files/wandb-summary.json
+2022-01-31 13:46:52,711 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,712 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,816 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-31 13:46:52,817 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: poll_exit
+2022-01-31 13:46:52,911 INFO    Thread-12 :6630 [sender.py:transition_state():395] send defer: 7
+2022-01-31 13:46:52,912 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: defer
+2022-01-31 13:46:52,913 INFO    HandlerThread:6630 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-31 13:46:52,913 DEBUG   SenderThread:6630 [sender.py:send_request():252] send_request: defer
+2022-01-31 13:46:52,913 INFO    SenderThread:6630 [sender.py:send_request_defer():391] handle sender defer: 7
+2022-01-31 13:46:52,926 DEBUG   HandlerThread:6630 [handler.py:handle_request():130] handle_request: poll_exit

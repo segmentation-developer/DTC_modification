@@ -1,0 +1,25 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+
+
+
+
+
+
+
+
+  1%|▎                              | 8/751 [03:01<4:40:19, 22.64s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 225, in <module>
+    writer.add_scalar('loss/loss', loss, iter_num)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/writer.py", line 457, in add_scalar
+    scalar(tag, scalar_value, display_name, summary_description), global_step, walltime)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/summary.py", line 152, in scalar
+    scalar = make_np(scalar)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/x2num.py", line 28, in make_np
+    return check_nan(prepare_pytorch(x))
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/tensorboardX/x2num.py", line 43, in prepare_pytorch
+    x = x.cpu().numpy()
+KeyboardInterrupt

@@ -1,0 +1,11 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet&Unet_concat', gamma=0.5, gpu='5', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1340, with_cons='without_cons')
+total 80 samples
+8 itertations per epoch
+  0%|                                         | 0/751 [00:00<?, ?it/s]/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/torch/nn/functional.py:3060: UserWarning: Default upsampling behavior when mode=trilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn("Default upsampling behavior when mode={} is changed "
+  0%|                                         | 0/751 [01:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNetandUnet_concat.py", line 207, in <module>
+    out_conv = torch.nn.Conv3d(32, 1, 1, padding=0).cuda()
+KeyboardInterrupt

@@ -1,0 +1,11 @@
+
+Namespace(D_lr=0.0001, base_lr=0.01, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet_concat_consis0.2', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+  0%|                                         | 0/751 [09:32<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 212, in <module>
+    outputs[:labeled_bs, 0, ...], label_batch[:labeled_bs].float())
+  File "/home/sohui/code/DTC/code/utils/losses_2.py", line 148, in boundary_loss
+    multipled = torch.einsum('bxyz, bxyz->bxyz', pc, dc)
+KeyboardInterrupt

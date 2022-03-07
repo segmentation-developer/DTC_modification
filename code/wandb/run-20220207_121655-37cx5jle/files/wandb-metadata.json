@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-163-generic-x86_64-with-glibc2.17",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-02-07T12:16:57.097731",
+    "startedAt": "2022-02-07T12:16:55.670121",
+    "docker": null,
+    "gpu": "GeForce GTX 1080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 32,
+    "cuda": "11.0.207",
+    "args": [],
+    "state": "running",
+    "program": "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py",
+    "codePath": "SSL_train_la_dtc_VNet.py",
+    "host": "cvlab-server-57",
+    "username": "sohui",
+    "executable": "/home/sohui/anaconda3/envs/unetr/bin/python"
+}

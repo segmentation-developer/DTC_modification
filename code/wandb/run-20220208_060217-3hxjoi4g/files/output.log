@@ -1,0 +1,30 @@
+
+Namespace(D_lr=0.0001, base_lr=0.004, batch_size=4, beta=0.3, consistency=1.0, consistency_rampup=40.0, consistency_type='kl', consistency_weight=0.1, deterministic=1, ema_decay=0.99, exp='LA/SSL_DTC_VNet_concat_CTGloss', gamma=0.5, gpu='1', labeled_bs=2, labelnum=16, max_iterations=6000, root_path='/data/sohui/LA_dataset/2018LA_Seg_TrainingSet', seed=1337, with_cons='without_cons')
+  0%|                                         | 0/751 [00:00<?, ?it/s]
+total 80 samples
+8 itertations per epoch
+iteration 1 : loss : 1.370751, loss_dice: 0.596265
+iteration 1 : loss : 1.370751
+iteration 2 : loss : 1.345375, loss_dice: 0.588353
+iteration 2 : loss : 1.345375
+iteration 3 : loss : 1.408163, loss_dice: 0.644537
+iteration 3 : loss : 1.408163
+iteration 4 : loss : 1.343381, loss_dice: 0.494355
+iteration 4 : loss : 1.343381
+iteration 5 : loss : 1.261999, loss_dice: 0.549710
+iteration 5 : loss : 1.261999
+iteration 6 : loss : 1.217804, loss_dice: 0.476233
+iteration 6 : loss : 1.217804
+iteration 7 : loss : 1.394204, loss_dice: 0.549865
+
+  0%|                               | 1/751 [00:11<2:22:01, 11.36s/it]
+iteration 8 : loss : 1.397464, loss_dice: 0.526731
+  0%|                               | 1/751 [00:12<2:40:52, 12.87s/it]
+Traceback (most recent call last):
+  File "/home/sohui/code/DTC/code/SSL_train_la_dtc_VNet.py", line 204, in <module>
+    gt_dis = compute_sdf(label_batch[:].cpu(
+  File "/home/sohui/code/DTC/code/utils/util.py", line 142, in compute_sdf
+    negdis = distance(negmask)
+  File "/home/sohui/anaconda3/envs/unetr/lib/python3.8/site-packages/scipy/ndimage/morphology.py", line 2286, in distance_transform_edt
+    numpy.multiply(dt, dt, dt)
+KeyboardInterrupt
