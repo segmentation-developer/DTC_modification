@@ -1,1 +1,0 @@
-{"iter": 1128, "total_loss": 0.6860764026641846, "SL_seg_Loss": 0.58328577876091, "SL_SDM_loss": 0.3293083906173706, "consistency_weight": 0.0332691412775071, "consistency_loss": 0.6008594036102295, "_runtime": 2369, "_timestamp": 1643622067, "_step": 1127}

@@ -1,1 +1,0 @@
-{"iter": 50, "total_loss": 0.9265300631523132, "SL_seg_Loss": 0.8880479335784912, "SL_SDM_loss": 0.1259469985961914, "consistency_weight": 0.006737946999085467, "consistency_loss": 0.10359714925289154, "_runtime": 112, "_timestamp": 1644220400, "_step": 49, "_wandb": {"runtime": 113}}
