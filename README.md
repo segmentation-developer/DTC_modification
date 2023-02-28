@@ -1,6 +1,7 @@
 # DTC_modification
+This is the test of DTC modificaiton   
 
-원본 code github : https://github.com/HiLab-git/DTC     
+original code github : https://github.com/HiLab-git/DTC     
 
 paper: Semi-supervised Medical Image Segmentation through Dual-task Consistency (AAAI2021)     
 
