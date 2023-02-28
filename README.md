@@ -1,8 +1,8 @@
 # DTC_modification
 
-원본 code github : https://github.com/HiLab-git/DTC 
+원본 code github : https://github.com/HiLab-git/DTC     
 
-paper: Semi-supervised Medical Image Segmentation through Dual-task Consistency (AAAI2021)
+paper: Semi-supervised Medical Image Segmentation through Dual-task Consistency (AAAI2021)     
 
 @inproceedings{luo2021semi,
   title={Semi-supervised Medical Image Segmentation through Dual-task Consistency},
@@ -13,7 +13,7 @@ paper: Semi-supervised Medical Image Segmentation through Dual-task Consistency 
   pages={8801--8809},
   year={2021}
 }
-
+# Requirements
 Some important required packages include:
 
 Pytorch version >=0.4.1.
